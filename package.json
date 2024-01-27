@@ -1,0 +1,17 @@
+{
+  "name": "@epubkit/generator",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "0.1.0",
+  "dependencies": {
+    "jsdom": "^24.0.0",
+    "jszip": "^3.10.1",
+    "srcset": "^5.0.0",
+    "uuid": "^9.0.1",
+    "xmlserializer": "^0.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.7"
+  }
+}
