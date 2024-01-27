@@ -3,7 +3,13 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.1.0",
+  "scripts": {
+    "bun:build": "bun build ./src/EpubGenerator.ts --outdir ./dist --target node --external '*'",
+    "declaration": "tsc --emitDeclarationOnly",
+    "build": "npm run bun:build && npm run declaration"
+  },
+  "module": "dist/EpubGenerator.js",
+  "version": "0.1.1",
   "dependencies": {
     "jsdom": "^24.0.0",
     "jszip": "^3.10.1",
@@ -12,6 +18,7 @@
     "xmlserializer": "^0.6.1"
   },
   "devDependencies": {
-    "@types/node": "^20.11.7"
+    "@types/node": "^20.11.7",
+    "typescript": "^5.3.3"
   }
 }
